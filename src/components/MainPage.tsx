@@ -3,7 +3,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Navbar from './Navbar'
-
+import Link from 'next/link'
 import { VscArrowCircleRight } from "react-icons/vsc";
 import { IoSearch } from "react-icons/io5";
 import { MdKeyboardVoice } from "react-icons/md";
@@ -25,8 +25,12 @@ export default function MainPage() {
        <button className='bg-white text-black    w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Man</button>
        <button className='bg-white text-black w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Woman</button>
        <button className='bg-white text-black w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Kids</button>
-       <div className='px-3 py-1  flex justify-center gap-2 items-center rounded-b-full rounded-t-full  bg-black text-lg   text-white hover:scale-110'>
-       <span className="bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent animate-gradient scale-y-110">Show More </span><VscArrowCircleRight className='text-2xl'/>
+       <div >
+       <Link href="/products" className='px-3 py-1  flex justify-center gap-2 items-center rounded-b-full rounded-t-full  bg-black text-lg   text-white hover:scale-110' >
+       <span className="bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent animate-gradient scale-y-110">Show More </span>
+       <VscArrowCircleRight className='text-2xl'/>
+    </Link>
+       
        </div>
       
        

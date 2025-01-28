@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { HiArrowCircleUp } from "react-icons/hi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -22,22 +23,35 @@ export default function Footer() {
             <div ><button className=' text-white  bg-[#A9A4A1] bg-opacity-60 border-solid text-lg w-full mx-auto sm:-mx-0 sm:w-full  p-1 py-2 px-4   my-2 rounded-4xl flex gap-4 sm:gap-8 justify-center   '><input className='bg-transparent placeholder-white  text-white border-none focus:outline-none focus:border-none' type="text" placeholder='Your Email Address' /> <HiArrowCircleUp className=' text-3xl' /></button></div>
             <div className=' flex flex-wrap gap-6 sm:gap-3'>
             <button className=' text-white  bg-[#A9A4A1] bg-opacity-60  text-lg  p-1 px-5 py-2 my-2 rounded-4xl hover:bg-white hover:text-black '>2023 Lookbook </button>
-            <button className=' text-white  bg-[#A9A4A1] bg-opacity-60  text-lg  mx-auto sm:-mx-0  p-1 pl-4 py-2    my-2 rounded-4xl flex gap-2 justify-center  hover:bg-white hover:text-black '>Shop Now <HiArrowCircleUp className=' text-3xl' /></button>
-            </div>
+            <Link href="/products">
+            <button className=' text-white  bg-[#A9A4A1] bg-opacity-60  text-lg  mx-auto sm:-mx-0  p-1 pl-4 py-2    my-2 rounded-4xl flex gap-2 justify-center  hover:bg-white hover:text-black '>Shop Now  <HiArrowCircleUp className=' text-3xl' /></button>
+           
+    </Link>
+             </div>
         </div>
   </div>
 
   <div className='  grid grid-cols-12 gap-5 w-4/5 sm:gap-0 mx-auto my-3  sm:my-12 text-center'>
     <div className='col-span-12 sm:col-span-4'>
         <ul className='flex justify-evenly  text-white font-semibold '>
-            <li>ABOUT</li>
-            <li>HOW IT WORKS</li>
-            <li>CONTACT</li>
+        <Link href="/about" replace>
+        <li>ABOUT </li>
+    </Link> <Link href="/contact" replace>
+    <li>HOW IT WORKS</li>
+    </Link> <Link href="/contact" replace>
+    <li>CONTACT</li>
+    </Link>
+           
+            
+           
         </ul>
        
     </div>
     <div className=' col-span-12 w-full sm:w-3/4  sm:col-span-4 text-center text-white'>
+      
+        <Link href="/">
         <h1 className='text-3xl font-semibold'>Shoply</h1>
+    </Link>
         <p className='text-xs opacity-50 py-1'>Best shopping experience </p>
     </div>
     <div className='col-span-12 sm:col-span-4'>
