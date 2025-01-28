@@ -48,6 +48,9 @@ export default function MainPage() {
         <div className='col-span-6 lg:col-span-6 '>
         <Image className='w-32 h-full rounded-xl'
       src={mainimg}
+
+      priority={true}
+      quality={100}
      
       alt="Picture of the author"
     />

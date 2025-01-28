@@ -74,6 +74,8 @@ const Dailydealscard = () => {
                   alt={deal.imageAlt}
                   width={115}
                   height={100}
+                  priority={true}
+                  quality={100}
                 />
               </div>
             </div>

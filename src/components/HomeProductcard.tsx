@@ -50,6 +50,8 @@ const Homeproductcard = () => {
      className="w-4/5 sm:w-32 h-36 sm:h-44 rounded-3xl object-cover hover:animate-pulse"
      src={item.imageSrc}
      alt={item.alt}
+     priority={true}
+     quality={100}
    />
  </div>
  

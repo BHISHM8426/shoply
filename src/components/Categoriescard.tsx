@@ -67,6 +67,7 @@ const Categoriescard = () => {
          width={500}
          height={500}
          quality={100}
+         priority={true}
        />
      </div>
      

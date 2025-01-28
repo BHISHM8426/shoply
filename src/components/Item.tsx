@@ -37,6 +37,8 @@ export default function item() {
           <div className='col-span-4 mx-auto sm:mx-0'>
           <Image className='sm:w-60   w-80 h-full rounded-3xl object-cover '
       src={shoppingman}
+      priority={true}
+      quality={100}
      
       alt="Picture of the handbags"
     />
