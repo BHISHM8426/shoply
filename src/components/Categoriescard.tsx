@@ -57,13 +57,15 @@ const Categoriescard = () => {
       {items.map((item) => (
        <div
        key={item.id}
-       className="flex flex-col sm:flex-row bg-slate-100 gap-3 items-center sm:justify-between w-full sm:w-60 h-auto sm:h-44 rounded-3xl text-xs"
+       className="flex flex-col sm:flex-row  gap-3 items-center sm:justify-between w-full sm:w-60 h-auto sm:h-44 rounded-3xl text-xs"
      >
        <span className="sm:px-4 text-lg font-semibold">{item.title}</span>
        <Image
          className="w-4/5 sm:w-32 mb-3 sm:mb-0 h-36 sm:h-44  rounded-3xl object-cover hover:animate-pulse"
          src={item.imageSrc}
          alt={item.alt}
+         width={500}
+         height={500}
        />
      </div>
      

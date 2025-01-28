@@ -29,7 +29,7 @@ export default function Footer() {
 
   <div className='  grid grid-cols-12 gap-5 w-4/5 sm:gap-0 mx-auto my-3  sm:my-12 text-center'>
     <div className='col-span-12 sm:col-span-4'>
-        <ul className='flex justify-evenly  text-white   font-semibold '>
+        <ul className='flex justify-evenly  text-white font-semibold '>
             <li>ABOUT</li>
             <li>HOW IT WORKS</li>
             <li>CONTACT</li>

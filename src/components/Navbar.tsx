@@ -18,10 +18,13 @@ export default function Navbar() {
   ];
 
   return (
-    <div className={`grid ${pathname === '/' ? '' : 'bg-gray-400'} grid-cols-12 items-center p-5 bg-transparent w-full px-10`}>
+    <div className={`grid ${pathname === '/' ? '' : 'bg-gray-400'} grid-cols-12 items-center mx-auto py-3 bg-transparent w-[95%] `}>
       
       <div className="col-span-3 md:col-span-3 text-center md:text-left">
-        <h2 className="font-black text-2xl text-center lg:text-left">Shoply</h2>
+      <Link href="/" className='font-black text-2xl text-center lg:text-left'>
+      Shoply
+    </Link>
+        {/* <h2 className="font-black text-2xl text-center lg:text-left">Shoply</h2> */}
       </div>
 
       {/* Navbar for larger screens */}
