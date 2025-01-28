@@ -45,7 +45,7 @@ const Homeproductcard = () => {
    key={item.id}
    className="flex flex-col sm:flex-row gap-3 items-center sm:justify-between w-full sm:w-60 h-auto sm:h-44 rounded-3xl text-xs"
  >
-   <span className="pl-4 sm:pl-6 text-lg font-semibold">{item.title}</span>
+   <span className=" sm:pl-6 text-lg font-semibold">{item.title}</span>
    <Image
      className="w-4/5 sm:w-32 h-36 sm:h-44 rounded-3xl object-cover hover:animate-pulse"
      src={item.imageSrc}

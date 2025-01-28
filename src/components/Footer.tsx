@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <h1 className='text-white text-4xl w-2/3 mx-auto  mt-40 sm:mt-60 font-semibold '>Get it Before <br /> Everyone Else !</h1>
         <div className='flex flex-wrap  justify-around  py-6'>
-            <div ><button className=' text-white  bg-[#A9A4A1] bg-opacity-60 border-solid text-lg w-full mx-auto sm:-mx-0 sm:w-full  p-1 py-2 px-8   my-2 rounded-4xl flex gap-8 justify-center   '><input className='bg-transparent placeholder-white  text-white border-none focus:outline-none focus:border-none' type="text" placeholder='Your Email Address' /> <HiArrowCircleUp className=' text-3xl' /></button></div>
+            <div ><button className=' text-white  bg-[#A9A4A1] bg-opacity-60 border-solid text-lg w-full mx-auto sm:-mx-0 sm:w-full  p-1 py-2 px-4   my-2 rounded-4xl flex gap-4 sm:gap-8 justify-center   '><input className='bg-transparent placeholder-white  text-white border-none focus:outline-none focus:border-none' type="text" placeholder='Your Email Address' /> <HiArrowCircleUp className=' text-3xl' /></button></div>
             <div className=' flex flex-wrap gap-6 sm:gap-3'>
             <button className=' text-white  bg-[#A9A4A1] bg-opacity-60  text-lg  p-1 px-5 py-2 my-2 rounded-4xl hover:bg-white hover:text-black '>2023 Lookbook </button>
             <button className=' text-white  bg-[#A9A4A1] bg-opacity-60  text-lg  mx-auto sm:-mx-0  p-1 pl-4 py-2    my-2 rounded-4xl flex gap-2 justify-center  hover:bg-white hover:text-black '>Shop Now <HiArrowCircleUp className=' text-3xl' /></button>
