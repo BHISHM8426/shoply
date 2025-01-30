@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import { SlLike } from 'react-icons/sl';
 import { FaArrowRight } from 'react-icons/fa';
@@ -5,6 +6,7 @@ import socks from  "../../public/socks.png";
 import tesirt from  "../../public/tshirt2.webp";
 import smartwatch from  "../../public/smartimage.png";
 import { FaBagShopping } from "react-icons/fa6"
+import Link from 'next/link';
 
 
 
@@ -50,15 +52,16 @@ const dailyDeals = [
 
 const Dailydealscard = () => {
   return (
-    <div className="h-auto max-w-[95%] rounded-3xl bg-black bg-cover bg-center mx-auto space-y-14 py-5">
-      <div className="text-white w-full   flex justify-center gap-2 sm:gap-5 ">
-        <h1 className="text-2xl sm:text-4xl font-semibold">Daily Deals</h1>
-        <p className="text-lg sm:text-xl pt-1 sm:pt-3">See All</p>
-        <FaArrowRight className="pt-2 sm:pt-4 text-2xl sm:text-4xl" />
+    
+    <div className="h-auto max-w-[95%] rounded-3xl bg-black bg-cover bg-center mx-auto space-y-7 py-5">
+      <div className="text-white w-full   flex justify-center gap-2 sm:gap-3 ">
+        <h1 className="text-2xl sm:text-3xl font-semibold">Daily Deals See All </h1>
+       
+        <FaArrowRight className=" text-3xl sm:text-4xl" />
       </div>
       <div className="flex flex-wrap gap-5  justify-center">
         {dailyDeals.map((deal) => (
-          <div
+          <Link href={`/products/{deal.id}`}
             key={deal.id}
             className="w-80 h-64 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           >
@@ -69,13 +72,14 @@ const Dailydealscard = () => {
               </div>
               <div>
                 <Image
-                  className="pr-5 pt-8"
+                  className="pr-5 pt-8 hover:opacity-50 hover:scale-110 duration-150"
                   src={deal.imageSrc}
                   alt={deal.imageAlt}
                   width={115}
                   height={100}
-                  priority={true}
-                  quality={100}
+                quality={75} 
+  priority={true} 
+  loading="eager" 
                 />
               </div>
             </div>
@@ -84,7 +88,8 @@ const Dailydealscard = () => {
                 <span className="line-through">{deal.originalPrice}</span>
                 <span className="pl-4 text-xl font-semibold">{deal.discountedPrice}</span>
                 <br />
-                <button className="bg-black text-white text-lg p-1 py-1 px-3 my-2 rounded-4xl hover:bg-white hover:text-black">
+                <button className="bg-black text-white text-lg p-1 py-1 px-3 my-2 rounded-4xl hover:bg-white hover:text-black"
+                 onClick={() => alert('Product added successfully to the cart!')}>
                   Add to Cart
                 </button>
               </div>
@@ -93,7 +98,7 @@ const Dailydealscard = () => {
                 <FaBagShopping className="text-2xl " />
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

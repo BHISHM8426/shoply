@@ -29,11 +29,29 @@ export default {
         '50%': { backgroundPosition: '100% 50%' },
         '100%': { backgroundPosition: '0% 50%' },
       },
+      moveRight: {
+        '0%, 100%': { transform: 'translateX(0)' },  
+          '50%': { transform: 'translateX(10px)' }, 
+      },
+      textanim: {
+        '0%': { backgroundPosition: '200% 0' },
+        '100%': { backgroundPosition: '0% 0' },
+      },
+      movemenu:{
+        '0%': { transform: 'translateY(10)' },  
+          '100%': { transform: 'translateY(40px)' }, 
+      }
     },
     animation: {
       gradient: 'gradient 3s ease infinite',
+      moveRight: 'moveRight 1s ease-in-out infinite',
+      movemenu: 'movemenu 0.5s ease-in-out forwards',
+       textanim: 'textanim 5s linear infinite'
     },
 
   },
   plugins: [],
 } satisfies Config;
+
+
+

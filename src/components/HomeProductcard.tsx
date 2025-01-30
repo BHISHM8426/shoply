@@ -10,56 +10,76 @@ const newArrivals = [
     title: 'Kitchen',
     imageSrc: kitchen,
     alt: 'Picture of the kitchen',
+    des: 'Best Design for kitchen Vantilation '
   },
   {
     id: 2,
     title: 'Furniture',
     imageSrc: chair,
     alt: 'Picture of the furniture',
+     des: 'Mesh Mid-Back Ergonomic Chair '
   },
   {
     id: 3,
     title: 'Bedding',
     imageSrc: bedding,
     alt: 'Picture of the bedding',
+     des: 'Alternative Soft Quilaty 500 GSM Blanket Havy Winter ... '
   },
   {
     id: 4,
     title: 'Decor',
     imageSrc: decor,
     alt: 'Picture of the decor',
+     des: 'Home Decor ,Living Room and Bedroom '
   },
+  
   
 ];
 
 const Homeproductcard = () => {
   return (
-    <div className="mx-auto w-[95%] lg:w-full my-3 sm:my-14  text-xs space-y-10">
+    <div className="mx-auto w-[95%]  my-3 sm:my-14  text-xs space-y-4 md:space-y-7">
       <div className="w-full  text-center">
-        <h1 className="text-2xl sm:text-4xl  font-semibold">New Arrivals for Home</h1>
+      
+        <h1 className='text-2xl sm:text-3xl font-semibold  '>New Arrivals for Home </h1>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-wrap sm:gap-6 sm:justify-center">
-  {newArrivals.map((item) => (
-   <div
-   key={item.id}
-   className="flex flex-col sm:flex-row gap-3 items-center sm:justify-between w-full sm:w-60 h-auto sm:h-44 rounded-3xl text-xs"
- >
-   <span className=" sm:pl-6 text-lg font-semibold">{item.title}</span>
-   <Image
-     className="w-4/5 sm:w-32 h-36 sm:h-44 rounded-3xl object-cover hover:animate-pulse"
-     src={item.imageSrc}
-     alt={item.alt}
-     priority={true}
-     quality={100}
-   />
- </div>
+      
+          <div className="grid grid-cols-1 gap-3 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+            {newArrivals.map((item) => (
+             <div
+             key={item.id}
+             className="flex justify-between  bg-gray-300        rounded-3xl text-xs"
+           >   <div className='w-1/2 px-4 space-y-3 my-auto'>
+            <span className=" text-lg  font-semibold">{item.title}</span>
+               <p className="text-sm text-gray-700">{item.des}</p>
+               {/* <span className="text-red-500 font-bold">{item.discount}</span> */}
+                {/* <span className="line-through px-4 text-gray-500">{item.rate}</span> */}
+              
+           </div>
+               <div className='h-full flex  '>
+               <Image
+        className="w-56 lg:w-48 h-60   rounded-3xl object-cover hover:opacity-50 hover:scale-110 duration-150"
+        src={item.imageSrc}
+        alt={item.alt}
+        width={500}
+        height={500}
+        quality={75} 
+        priority={true} 
+        loading="eager" // Ensures it loads immediately
+      />
+               </div>
+           
+           </div>
+           
+            ))}
+          </div>
  
-  ))}
 </div>
       
       
-    </div>
+    
   );
 };
 
