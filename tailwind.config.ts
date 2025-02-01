@@ -18,6 +18,7 @@ export default {
         'footerimg':"url('https://thumbs.dreamstime.com/b/photo-young-man-beige-t-shirt-using-laptop-pointing-finger-mockup-online-shopping-offers-isolated-dark-blue-color-photo-333192924.jpg') ",
         'background-about':"url('https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?t=st=1738313992~exp=1738317592~hmac=641f75202dfdfe3d8b4708b763bf0773139b8d05fb4da5169613aa17149694df&w=996')"
       },
+      
       borderRadius:{
         '4xl' : "100px"
       }
