@@ -59,13 +59,13 @@ Please drop us a note at: aladinn@server.in</p>\
      
      <div className=' grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-5'>
       <div className=' flex  mx-auto sm:mx-0 flex-col gap-1  lg:gap-5'>
-      <h1 className='text-black text-2xl md:text-4xl font-semibold '>Help Center</h1>
+      <h1 className='text-black  text-2xl md:text-4xl font-semibold '>Help Center</h1>
       <p className=' text-white font-semibold '>Need Help ? try These :</p>
       <ul className='text-white '>
         <li>Submit Your Issue</li>
         <li>Find a solution at our <span>Help Center</span></li>
       </ul>
-      <p>or email us at :aladinn@server.in</p>
+      <p className='text-white'>or email us at :aladinn@server.in</p>
       <div className='my-5'>
       <h1 className='text-black text-2xl md:text-4xl font-semibold '>Office</h1>
       <ul className='my-2 text-white'>

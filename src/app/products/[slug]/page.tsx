@@ -9,7 +9,7 @@ const page = ({params}:any) => {
     const product = Productdata.find((item) => item.id === parseInt(slug));
 
     if(!product){
-      return <div className='text-center text-3xl text-black my-10'>Product not avilable</div>
+      return <div className='text-center text-3xl text-black my-10'>Product not available</div>
     }
   return (
     <div>
@@ -24,6 +24,7 @@ const page = ({params}:any) => {
                              height={100}
                              quality={75}
                               priority={true} 
+                              loading="eager" 
                             className=" w-full h-full  object-contain rounded-md mx-auto"
                     />
                 </div>

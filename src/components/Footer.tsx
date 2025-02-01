@@ -13,10 +13,9 @@ export default function Footer() {
       <div className='mx-auto bg-footerimg bg-opacity-10  object-contain  w-full h-auto  rounded-3xl  rounded-b-3xl     bg-cover bg-center'>
         
     
-        <div className='flex flex-wrap justify-center sm:justify-evenly  gap-10 text-4xl font-serif text-white  py-14'>
-            <h1>Elgant.</h1>
-            <h1>Enchanting.</h1>
-            <h1>Versencia.</h1>
+        <div className='flex flex-wrap justify-center   gap-10 text-2xl md:text-4xl font-serif text-white  py-14'>
+           
+            <h1 className='text-center'>Your One-Stop Shop for Quality Products & Exclusive Deals!</h1>
         </div>
             <h1 className='text-white text-4xl w-2/3 mx-auto   mt-40 sm:mt-60 font-semibold '>Get it Before <br /> Everyone Else !</h1>
         <div className='flex flex-wrap  justify-around  py-6'>
