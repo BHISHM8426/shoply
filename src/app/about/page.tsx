@@ -20,6 +20,11 @@ export default function page() {
     </Link>   
     <h1 className='text-black font-semibold text-3xl font-serif'>Our Misson</h1>
     <p className='text-lg text-white font-semibold '> Our mission is to provide high-quality, affordable, and innovative products that enhance everyday life. We are committed to delivering exceptional customer experiences through seamless shopping, reliable service, and sustainable practices.</p>
+    <h1 className='text-black font-semibold text-3xl font-serif'>Our Vision</h1>
+    <p className='text-lg text-white font-semibold '> To become a provider of customized software solutions that seamlessly integrate with our clients' organizations and helps them to automate their business.
+
+</p>
+   
     </div>
          
          <div className=' grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-5'>

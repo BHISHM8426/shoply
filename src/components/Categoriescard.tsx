@@ -56,7 +56,7 @@ const Categoriescard = () => {
       {items.map((item) => (
        <div
        key={item.id}
-       className="flex justify-between bg-gray-300        rounded-3xl text-xs"
+       className="flex justify-between bg-gray-300 overflow-hidden relative        rounded-3xl text-xs"
      >   <div className='w-1/2 pl-4 space-y-3 my-auto'>
       <span className=" text-lg  font-semibold">{item.title}</span>
          <p className="text-sm text-gray-700">{item.des}</p>
@@ -64,14 +64,14 @@ const Categoriescard = () => {
           {/* <span className="line-through px-4 text-gray-500">{item.rate}</span> */}
         
      </div>
-         <div className='h-full '>
+         <div className='h-full transform ease-in-out transition-all '>
          <Image
-  className="w-56 lg:w-48 h-60   rounded-3xl object-cover hover:opacity-50 hover:scale-110 duration-150"
+  className="w-56 lg:w-48 h-60   rounded-3xl object-cover hover:opacity-50 hover:scale-105 "
   src={item.imageSrc}
   alt={item.alt}
   width={500}
   height={500}
-  
+
   quality={75} 
   priority={true} 
   loading="eager" // Ensures it loads immediately
