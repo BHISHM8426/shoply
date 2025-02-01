@@ -16,22 +16,29 @@ export default function MainPage() {
 
    <div className='grid grid-cols-12 gap-3 sm:gap-5    lg:py-14 sm:my-0  lg:mx-auto     max-h-full   '>
     <div className= ' col-span-12 sm:col-span-6  md:col-span-3  justify-center items-center  flex flex-col ' >
-      <div className='   w-1/2  bg-opacity-50  bg-slate-100 flex justify-center items-center  flex-col gap-4 py-4 rounded-b-3xl rounded-t-3xl '>
+      <div className='   w-1/2 md:w-4/5 lg:w-2/3 xl:w-1/2 lg:py-8 bg-opacity-50  bg-slate-100 flex justify-center items-center  flex-col gap-4 py-4 rounded-b-3xl rounded-t-3xl '>
       {/* <div className="flex items-center   pt-4">
     <div className="w-10 h-10 bg-black rounded-full text-white flex text-xl justify-center items-center hover:animate-spin"><VscArrowCircleRight /></div>
     <div className="w-10 h-10 bg-black rounded-full text-white flex text-xs justify-center items-center -ml-1">All</div>
   </div> */}
 
-       <button className='bg-white text-black    w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Man</button>
+       <button className='bg-white text-black w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Man</button>
        <button className='bg-white text-black w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Woman</button>
        <button className='bg-white text-black w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Kids</button>
-       <div >
+       <Link href="/products" replace>
+       <button className='bg-white text-black w-32  rounded-3xl hover:bg-black hover:text-white py-2 px-2 flex group
+       bg-gradient-to-r from-red-500 via-green-500 to-blue-500 font-semibold'>Show More
+         <span><VscArrowCircleRight className='text-2xl transition-transform  group-hover:animate-moveRight'/></span></button>
+    </Link>
+
+       
+       {/* <div >
        <Link href="/products" className='px-3 py-1  flex justify-center gap-2 items-center rounded-b-full rounded-t-full  bg-black text-lg   text-white  group' >
-       <span className="bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent animate-gradient ">Show More </span>
+       <span className="bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-tanimate-gradient ext text-transparent ">Show More </span>
        <VscArrowCircleRight className='text-2xl transition-transform  group-hover:animate-moveRight'/>
     </Link>
        
-       </div>
+       </div> */}
       
        
       </div>
@@ -63,7 +70,7 @@ export default function MainPage() {
     </div>
   </div>
 
-  <div className='w-4/5  sm:w-full md:w-1/2 mx-auto flex flex-col gap-8 py-5  lg:py-16    h-full  rounded-3xl  '>
+  <div className='w-4/5  md:w-full lg:w-2/3 mx-auto flex flex-col gap-8 py-5  lg:py-16    h-full  rounded-3xl  '>
     <div className='flex justify-between mx-auto mb-4 sm:mb-0  bg-gray-200 w-full sm:w-3/4 rounded-l-full p-3 rounded-r-full'><IoSearch className='text-2xl' /><input className='border-none  w-full h-2/3 focus:outline-none focus:border-none pl-2  bg-gray-200' type="text" placeholder='  Search' /> <MdKeyboardVoice className='text-2xl float-end' /></div>
    
     <div className='hidden sm:block'>

@@ -71,6 +71,7 @@ const Categoriescard = () => {
   alt={item.alt}
   width={500}
   height={500}
+  
   quality={75} 
   priority={true} 
   loading="eager" // Ensures it loads immediately

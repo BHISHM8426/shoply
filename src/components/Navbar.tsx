@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <div className='flex justify-center'>
-      <div className={`grid ${pathname === '/' ? '#F7ACB1' : ''} bg-gray-200 z-50 relative  grid-cols-12 items-center mx-auto px-5 py-6  w-[95%] `}>
+      <div className={`grid ${pathname === '/' ? '#F7ACB1' : ''} bg-gray-200 z-50 relative  grid-cols-12 items-center mx-auto px-7 py-6  w-[95%] `}>
       
       <div className="col-span-3 md:col-span-3  text-center md:text-left">
       <Link href="/" className='font-black text-2xl text-center lg:text-left'>
@@ -34,7 +34,7 @@ export default function Navbar() {
       
       <div className="col-span-9 md:hidden flex justify-end">
         <button onClick={() => setMenuopen(!menuopen)} className="text-2xl">
-          {menuopen ? <AiOutlineClose /> : <AiOutlineMenu />}
+         {menuopen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </button>
       </div>
 
@@ -66,11 +66,11 @@ export default function Navbar() {
           <button
             key={item.path}
             className={`p-2 px-4 rounded-3xl  font-serif text-sm lg:text-base ${
-              pathname === item.path ? 'bg-black text-white' : 'bg-white text-black hover:bg-black hover:text-white '
+            pathname === item.path ? 'bg-black text-white' : 'bg-white text-black hover:bg-black hover:text-white '
             }`}
           >
             <Link href={item.path} className="w-full h-full block text-center">
-              {item.title}
+            {item.title}
             </Link>
           </button>
         ))}
@@ -80,7 +80,7 @@ export default function Navbar() {
     <div
           className={`${
             menuopen ? 'animate-movemenu' : ' hidden'
-          }  w-[95%] py-1   overflow-hidden  flex justify-evenly   bg-white shadow-md md:hidden   absolute  top-10  lg:hidden `}
+          } w-[95%] py-1   overflow-hidden  flex justify-evenly   bg-white shadow-md md:hidden   absolute  top-10  lg:hidden `}
         >
           <ul className="flex z-10 items-start gap-3 my-1">
             {navItems.map((item) => (
@@ -88,7 +88,7 @@ export default function Navbar() {
                onClick={()=>setMenuopen(false)}
                 key={item.path}
                 className={`p-2  rounded-md  font-serif text-xs lg:text-base ${
-                  pathname === item.path ? 'bg-black text-white' : 'bg-white text-black'
+                pathname === item.path ? 'bg-black text-white' : 'bg-white text-black'
                 }`}
               >
                 <Link href={item.path} className="w-full h-full block text-center">
