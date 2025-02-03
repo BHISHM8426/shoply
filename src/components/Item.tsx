@@ -20,7 +20,7 @@ export default function item() {
           <p className='text-md sm:text-lg mx-auto text-center  font-semibold opacity-70'>Quality,design,technology,browse,the top brands </p>
           {/* <button className='flex gap-5 pt-12'> <span className='text-lg font-semibold'>Chose branded items</span> <FaArrowRight className=' text-2xl' /></button> */}
           <Link href="/products">
-          <button className='  text-black border-2 border-black border-solid text-lg w-3/4 mx-auto sm:-mx-0 sm:w-3/4 p-1 py-2   my-2 rounded-4xl flex gap-4 justify-center  hover:bg-white hover:text-black group '>Chose branded items <FaArrowRight className=' text-2xl transition-transform  group-hover:animate-moveRight' /></button>
+          <button className='  text-black border-2 border-black border-solid text-lg w-3/4 mx-auto sm:-mx-0 sm:w-3/4 p-1 py-2   my-2 rounded-4xl flex gap-4 justify-center  hover:bg-white hover:text-black group '>Chouse branded items <FaArrowRight className=' text-2xl transition-transform  group-hover:animate-moveRight' /></button>
          
     </Link>
       </div>

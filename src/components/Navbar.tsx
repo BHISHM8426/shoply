@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { FaRegUser } from "react-icons/fa";
+import User from './User'
 
 export default function Navbar() {
   const pathname = usePathname(); 
@@ -15,6 +17,7 @@ export default function Navbar() {
     { title: 'PRODUCTS', path: '/products' },
     { title: 'ABOUT', path: '/about' },
     { title: 'CONTACT', path: '/contact' },
+    // {title: 'Sign In', path:'/Singin'  }
   ];
 
   return (
@@ -27,6 +30,7 @@ export default function Navbar() {
     </Link>
         {/* <h2 className="font-black text-2xl text-center lg:text-left">Shoply</h2> */}
       </div>
+      {/* <User/> */}
 
       
      
@@ -71,10 +75,16 @@ export default function Navbar() {
           >
             <Link href={item.path} className="w-full h-full block text-center">
             {item.title}
+            
             </Link>
           </button>
+          
         ))}
+        <Link href="/user" >
+             <FaRegUser className='text-2xl text-blue-500' />
+             </Link>
       </div>
+      
     </div>
     {/* Navbar for mobile device  */}
     <div
@@ -82,6 +92,7 @@ export default function Navbar() {
     menuopen ? 'opacity-100 scale-100 translate-y-14' : ' scale-95 -translate-y-5'
   } w-[95%] py-1 rounded-xl overflow-hidden flex justify-evenly bg-white shadow-md md:hidden absolute top-10 lg:hidden`}
 >
+  
           <ul className="flex z-10 items-start gap-3 my-2">
             {navItems.map((item) => (
               <li
@@ -96,8 +107,14 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-          </ul>
+             <Link href="/user" >
+             <FaRegUser className='text-2xl text-blue-500' />
+             </Link>
+             
+           </ul>
+          
           </div>
+         
     
     </div>
     
