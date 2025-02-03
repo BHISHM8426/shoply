@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <div className='flex justify-center'>
-      <div className={`grid ${pathname === '/' ? '#F7ACB1' : ''} bg-gray-200 z-50 relative  grid-cols-12 items-center mx-auto px-7 py-6  w-[95%] `}>
+      <div className={`grid ${pathname === '/' ? '#F7ACB1' : ''} bg-gray-200 rounded-t-3xl mt-3 z-50 relative  grid-cols-12 items-center mx-auto px-7 py-6  w-[95%] `}>
       
       <div className="col-span-3 md:col-span-3  text-center md:text-left">
       <Link href="/" className='font-black text-2xl text-center lg:text-left'>
@@ -33,7 +33,7 @@ export default function Navbar() {
 
       
       <div className="col-span-9 md:hidden flex justify-end">
-        <button onClick={() => setMenuopen(!menuopen)} className="text-2xl">
+        <button onClick={() => setMenuopen(!menuopen)} className="text-2xl ">
          {menuopen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </button>
       </div>
@@ -78,11 +78,11 @@ export default function Navbar() {
     </div>
     {/* Navbar for mobile device  */}
     <div
-          className={`${
-            menuopen ? 'animate-movemenu' : ' hidden'
-          } w-[95%] py-1   overflow-hidden  flex justify-evenly   bg-white shadow-md md:hidden   absolute  top-10  lg:hidden `}
-        >
-          <ul className="flex z-10 items-start gap-3 my-1">
+  className={`transition-all duration-700 ease-in-out transform ${
+    menuopen ? 'opacity-100 scale-100 translate-y-14' : ' scale-95 -translate-y-5'
+  } w-[95%] py-1 rounded-xl overflow-hidden flex justify-evenly bg-white shadow-md md:hidden absolute top-10 lg:hidden`}
+>
+          <ul className="flex z-10 items-start gap-3 my-2">
             {navItems.map((item) => (
               <li
                onClick={()=>setMenuopen(false)}

@@ -50,8 +50,8 @@ const Homeproductcard = () => {
             {newArrivals.map((item) => (
              <div
              key={item.id}
-             className="flex justify-between  bg-gray-300        rounded-3xl text-xs"
-           >   <div className='w-1/2 px-4 space-y-3 my-auto'>
+             className="flex justify-between  bg-gray-300  overflow-hidden relative      rounded-3xl text-xs"
+           >   <div className='w-1/2 px-4 space-y-3 my-auto '>
             <span className=" text-lg  font-semibold">{item.title}</span>
                <p className="text-sm text-gray-700">{item.des}</p>
                {/* <span className="text-red-500 font-bold">{item.discount}</span> */}

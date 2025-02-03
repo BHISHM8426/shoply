@@ -4,12 +4,15 @@ import Link from 'next/link';
 import { HiArrowCircleUp } from "react-icons/hi";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 
 import { FaYoutube } from "react-icons/fa6";
 export default function Footer() {
   return (
     <div className='space-y-10 '>
-       <div className=' object-contain mx-auto h-auto max-w-[95%]   bg-black  bg-cover bg-center'>
+       <div className=' object-contain mx-auto h-auto max-w-[95%] rounde-t-3xl   bg-black  bg-cover bg-center'>
       <div className='mx-auto bg-footerimg bg-opacity-10  object-contain  w-full h-auto  rounded-3xl  rounded-b-3xl     bg-cover bg-center'>
         
     
@@ -36,8 +39,8 @@ export default function Footer() {
         <ul className='flex justify-evenly md:gap-3 text-white opacity-70 font-semibold '>
     <Link href="/about" replace>
         <li className='hover:underline hover:text-blue-500'>ABOUT </li>
-    </Link> <Link href="/contact" replace>
-        <li className='hover:underline hover:text-blue-500'>HOW IT WORKS</li>
+    </Link> <Link href="/products" replace>
+        <li className='hover:underline hover:text-blue-500'>PRODUCTS</li>
     </Link> <Link href="/contact" replace>
         <li className='hover:underline hover:text-blue-500'>CONTACT</li>
     </Link>
@@ -54,13 +57,17 @@ export default function Footer() {
         </Link>
             <p className='text-xs opacity-50 py-1 underline'>Best shopping experience </p>
     </div>
-    <div className='col-span-12 md:col-span-4'>
-        <ul  className='flex justify-evenly  text-white  font-semibold text-lg'>
-            <li className='hover:underline hover:text-blue-500'>Singup</li>
-            <li className='hover:underline hover:text-blue-500'>Login</li>
+    <div className='col-span-12 md:col-span-4 mx-auto md:mx-0'>
+        <ul  className='flex  gap-5 lg:gap-10  text-white  font-semibold text-lg'>
+            {/* <li className='hover:underline hover:text-blue-500'>Singup</li> */}
+            {/* <li className='hover:underline hover:text-blue-500'>Login</li> */}
             <li className=' hover:text-blue-800 transition-all hover:scale-150 my-auto'><FaFacebookF /></li>
             <li className='hover:text-red-700 transition-all hover:scale-150 my-auto' ><FaInstagram /></li>
-            <li className='hover:text-red-500 transition-all hover:scale-150 my-auto'><FaYoutube /></li></ul>
+            <li className='hover:text-red-500 transition-all hover:scale-150 my-auto'><FaYoutube /></li>
+            <li className='hover:text-gray-400 transition-all hover:scale-150   '><FaTwitter /></li>
+            <li className='hover:text-green-400 transition-all hover:scale-150   '><FaWhatsapp /></li>
+            <li className='hover:text-blue-300 transition-all hover:scale-150   '><FaTelegramPlane /></li>
+        </ul>
 
     </div>
   </div>

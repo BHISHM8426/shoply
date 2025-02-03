@@ -8,6 +8,10 @@ import { VscArrowCircleRight } from "react-icons/vsc";
 import { IoSearch } from "react-icons/io5";
 import { MdKeyboardVoice } from "react-icons/md";
 import mainimg from "../../public/background.jpeg"
+import sneakersimg from  "../../public/sneakers.jpg";
+import handbags from  "../../public/handbags.jpg";
+import watches from  "../../public/watches.jpg";
+
 export default function MainPage() {
   return (
     <>
@@ -48,9 +52,9 @@ export default function MainPage() {
       <h1 className='text-2xl sm:text-3xl lg:text-5xl   font-bold text-gray-200  '>Let's Shop <br />ALL-IN-ONE</h1>
     <p className='md:text-xl  lg:text-2xl font-bold my-2 text-gray-200 '>Visit Collection And Follow Your Passion.</p></div>
   
-    <div className=' hidden sm:block col-span-12 md:col-span-3 lg:col-span-4 xl:col-span-3 2xl:col-span-3 text-center  '>
+    <div className='  flex 2xl:col-span-3 text-center  '>
       {/* <button className='bg-white text-black text-xs p-1 py-2 px-3 my-2 rounded-4xl  hover:bg-black hover:text-white hover:ease-in '>BEST SETVICE</button> */}
-      <h3 className='font-serif font-semibold'>Why Our Products Make You happy</h3>
+      {/* <h3 className='font-serif font-semibold'>Why Our Products Make You happy</h3>
       <div className='col-12  flex md:flex-col lg:flex-row justify-center gap-4 mt-3'>
         <div className='col-span-6 lg:col-span-6 '>
         <Image className='w-32 h-full rounded-xl hover:opacity-50 hover:scale-110 duration-150'
@@ -66,12 +70,19 @@ export default function MainPage() {
           <button className=' p-3 font-semibold  w-28 rounded-xl bg-white transition-all hover:scale-110 '>Best Value</button>
           <button className='bg-white rounded-xl w-28 p-3 font-semibold transition-all hover:scale-110  '>Case-Back</button>
         </div>
-      </div>
+      </div> */}
+      
+            
+
+
+
+
+
     </div>
   </div>
 
   <div className='w-4/5  md:w-full lg:w-2/3 mx-auto flex flex-col gap-8 py-5  lg:py-16    h-full  rounded-3xl  '>
-    <div className='flex justify-between mx-auto mb-4 sm:mb-0  bg-gray-200 w-full sm:w-3/4 rounded-l-full p-3 rounded-r-full'><IoSearch className='text-2xl' /><input className='border-none  w-full h-2/3 focus:outline-none focus:border-none pl-2  bg-gray-200' type="text" placeholder='  Search' /> <MdKeyboardVoice className='text-2xl float-end' /></div>
+    <div className='flex justify-between mx-auto   bg-gray-200 w-full sm:w-3/4 rounded-l-full p-3 rounded-r-full'><IoSearch className='text-2xl' /><input className='border-none  w-full h-2/3 focus:outline-none focus:border-none pl-2 text-lg  bg-gray-200' type="text" placeholder='  Search' /> <MdKeyboardVoice className='text-2xl float-end' /></div>
    
     <div className='hidden sm:block'>
       <ul className='flex flex-wrap gap-5  justify-center  text-black cursor-pointer '>

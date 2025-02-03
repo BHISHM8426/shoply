@@ -27,14 +27,14 @@ export default function page() {
   };
   return (
   
-     <div className='w-[95%] bg-gray-100 mx-auto  ' >
+     <div className='w-[95%] bg-gray-100 mx-auto rounded-b-3xl mb-5 ' >
      <h1 className='text-center text-3xl sm:text-4xl font-semibold py-5'>Shop the Latest & Best Products</h1>
-<div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-3 w-[95%] rounded-b-3xl mx-auto   p-5'>
+<div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-3 w-[95%]  mx-auto   p-5'>
         {/* <Navbar/> */}
       
       {Productdata.map((product)=>(
          <Link href={`/products/${product.id}`}>
-         <div className=" w-full h-fit my-2   mx-auto  bg-[#edc9dd] object-cover border  rounded-xl shadow-lg p-4 max-w-xs " 
+         <div className=" w-full h-fit my-2   mx-auto  bg-[#F9FAFB]  object-cover border  rounded-xl shadow-lg p-4 max-w-xs " 
           key ={product.id}>
         <Image
   src={product.images[0]}

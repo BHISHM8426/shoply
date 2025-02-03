@@ -13,9 +13,9 @@ const page = ({params}:any) => {
     }
   return (
     <div>
-       <div className=" flex justify-center items-center w-[95%] mx-auto bg-gray-300 " 
+       <div className=" flex justify-center items-center w-[95%] mx-auto bg-[#F9FAFB] mb-5 rounded-b-3xl " 
                 key ={product.id}>
-              <div className='grid grid-cols-1 md:grid-cols-2 bg-gray-300 w-3/4'>
+              <div className='grid grid-cols-1 md:grid-cols-2 bg-[#F9FAFB]  w-3/4'>
                 <div className='w-92 h-80 my-auto'>
                    <Image
                              src={product.images[0]}
@@ -30,7 +30,7 @@ const page = ({params}:any) => {
                 </div>
                 <div className='w-full lg:w-3/4 space-y-3 my-5'>
                 <h2 className="text-2xl truncate font-semibold ">{product.title}</h2>
-         <p className="text-gray-600   md:text-lg">{product.description}</p>
+         <p className="text-gray-600 ">{product.description}</p>
          <div className="flex items-center ">
            <span className="text-red-500 text-lg"> {product.category}</span>
            <span className="ml-2 text-sm text-gray-500">({product.rating} )</span>

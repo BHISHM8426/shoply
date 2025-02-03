@@ -40,14 +40,21 @@ export default {
       },
       movemenu:{
         '0%': { transform: 'translateY(10)' },  
-          '100%': { transform: 'translateY(40px)' }, 
-      }
+          '100%': { transform: 'translateY(50px)' }, 
+      },
+      removemenu:{
+        '0%': { transform: 'translateY(50)' },  
+          '100%': { transform: 'translateY(10px)' }, 
+      },
+      
     },
     animation: {
       gradient: 'gradient 3s ease infinite',
       moveRight: 'moveRight 1s ease-in-out infinite',
       movemenu: 'movemenu 0.5s ease-in-out forwards',
-       textanim: 'textanim 5s linear infinite'
+      removemenu: 'movemenu 0.5s ease-out in forwards',
+       textanim: 'textanim 5s linear infinite',
+   
     },
 
   },
