@@ -15,7 +15,7 @@ export default {
       backgroundImage: {
         'mainpage' :"url('https://digitalscholar.in/wp-content/uploads/2022/09/seo-tips-for-fashion-e-commerce-website.jpg')",
         'response' : "url('https://media.istockphoto.com/id/1569285773/photo/hand-of-young-woman-using-smartphone-for-chat-and-communication.jpg?s=612x612&w=0&k=20&c=oewcTTtdwOGsGCsNqLkaQ6xV5SuCbN0ggXXb6Giryak=')",
-        'footerimg':"url('http://thumbs.dreamstime.com/z/online-shopping-e-commerce-background-wooden-cube-showing-cart-icon-resting-computer-keyboard-viewed-45064310.jpg') ",
+        'footerimg':"url('https://cdn.pixabay.com/photo/2014/08/06/09/58/seo-411385_960_720.jpg') ",
         'background-about':"url('https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg?t=st=1738313992~exp=1738317592~hmac=641f75202dfdfe3d8b4708b763bf0773139b8d05fb4da5169613aa17149694df&w=996')"
       },
       borderRadius:{
