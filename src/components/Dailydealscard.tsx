@@ -53,7 +53,7 @@ const dailyDeals = [
 const Dailydealscard = () => {
   return (
     
-    <div className="h-auto max-w-[95%] rounded-3xl bg-black bg-cover bg-center mx-auto space-y-7 py-5">
+    <div className="h-auto max-w-[95%] rounded-3xl bg-black bg-cover bg-center mx-auto space-y-5 py-5">
       <div className="text-white w-full   flex justify-center gap-2 sm:gap-3 ">
         <h1 className="text-2xl sm:text-3xl font-semibold">Daily Deals See All </h1>
        
@@ -61,7 +61,7 @@ const Dailydealscard = () => {
       </div>
       <div className="flex flex-wrap gap-5  justify-center">
         {dailyDeals.map((deal) => (
-          <Link href={`/products/${deal.id}`}
+          <Link href={`/products`}
             key={deal.id}
             className="w-80 h-64 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           >

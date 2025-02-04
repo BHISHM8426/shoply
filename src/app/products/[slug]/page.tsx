@@ -3,10 +3,13 @@ import React from 'react'
 import Productdata from '@/components/ProductsData';
 import Image from 'next/image';
 
+interface Params {
+  slug:any;
+}
 const page = ({params}:any) => {
-    const {slug} =params;
+    const {slug}:Params = React.use(params);
     
-    const product = Productdata.find((item) => item.id === parseInt(slug));
+    const product = Productdata?.find((item) => item.id === parseInt(slug));
 
     if(!product){
       return <div className='text-center text-3xl text-black my-10'>Product not available</div>

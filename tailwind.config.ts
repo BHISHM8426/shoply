@@ -34,27 +34,23 @@ export default {
         '0%, 100%': { transform: 'translateX(0)' },  
           '50%': { transform: 'translateX(10px)' }, 
       },
-      textanim: {
-        '0%': { backgroundPosition: '200% 0' },
-        '100%': { backgroundPosition: '0% 0' },
-      },
+     
       movemenu:{
         '0%': { transform: 'translateY(10)' },  
           '100%': { transform: 'translateY(50px)' }, 
       },
-      removemenu:{
-        '0%': { transform: 'translateY(50)' },  
-          '100%': { transform: 'translateY(10px)' }, 
-      },
+     
+      movenav:{
+        '0%': { transform: 'translateY(-100%)' },  
+          '100%': { transform: 'translateY(0px)' }, 
+}
       
     },
     animation: {
       gradient: 'gradient 3s ease infinite',
       moveRight: 'moveRight 1s ease-in-out infinite',
       movemenu: 'movemenu 0.5s ease-in-out forwards',
-      removemenu: 'movemenu 0.5s ease-out in forwards',
-       textanim: 'textanim 5s linear infinite',
-   
+     movenav: 'movenav 0.8s ease-in-out forwards'
     },
 
   },

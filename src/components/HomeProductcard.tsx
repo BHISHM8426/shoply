@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import kitchen from  "../../public/kitchen.jpg";
 import chair from  "../../public/chair.jpg";
 import bedding from  "../../public/bedding.webp";
@@ -10,28 +11,32 @@ const newArrivals = [
     title: 'Kitchen',
     imageSrc: kitchen,
     alt: 'Picture of the kitchen',
-    des: 'Best Design for kitchen Vantilation '
+    des: 'Best Design for kitchen Vantilation ',
+    category:'kitchen-accessories'
   },
   {
     id: 2,
     title: 'Furniture',
     imageSrc: chair,
     alt: 'Picture of the furniture',
-     des: 'Mesh Mid-Back Ergonomic Chair '
+     des: 'Mesh Mid-Back Ergonomic Chair ',
+     category:'furniture'
   },
   {
     id: 3,
     title: 'Bedding',
     imageSrc: bedding,
     alt: 'Picture of the bedding',
-     des: 'Alternative Soft Quilaty 500 GSM Blanket Havy Winter ... '
+     des: 'Alternative Soft Quilaty 500 GSM Blanket Havy Winter ... ',
+     category:'furniture'
   },
   {
     id: 4,
     title: 'Decor',
     imageSrc: decor,
     alt: 'Picture of the decor',
-     des: 'Home Decor ,Living Room and Bedroom '
+     des: 'Home Decor ,Living Room and Bedroom ',
+     category :'home-decoration'
   },
   
   
@@ -48,12 +53,14 @@ const Homeproductcard = () => {
       
           <div className="grid grid-cols-1 gap-3 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
             {newArrivals.map((item) => (
+              <Link href={`/products?category=${item?.category}`}>
              <div
              key={item.id}
              className="flex justify-between  bg-gray-300  overflow-hidden relative      rounded-3xl text-xs"
            >   <div className='w-1/2 px-4 space-y-3 my-auto '>
             <span className=" text-lg  font-semibold">{item.title}</span>
                <p className="text-sm text-gray-700">{item.des}</p>
+               <p className='text-sm text-red-400'>{item.category}</p>
                {/* <span className="text-red-500 font-bold">{item.discount}</span> */}
                 {/* <span className="line-through px-4 text-gray-500">{item.rate}</span> */}
               
@@ -72,7 +79,7 @@ const Homeproductcard = () => {
                </div>
            
            </div>
-           
+           </Link>
             ))}
           </div>
  
