@@ -60,9 +60,9 @@ const Dailydealscard = () => {
         <FaArrowRight className=" text-3xl sm:text-4xl" />
       </div>
       <div className="flex flex-wrap gap-5  justify-center">
-        {dailyDeals.map((deal) => (
-          <Link href={`/products`}
-            key={deal.id}
+        {dailyDeals.map((deal,index) => (
+          <Link key={index} href={`/products`}
+            // key={deal.id}
             className="w-80 h-64 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           >
             <div className={`w-full h-40 rounded-t-3xl flex ${deal?.bgTop}`}>

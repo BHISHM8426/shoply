@@ -53,8 +53,8 @@ export default function page({cettegory}:any) {
 <div className=' grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-3 p-2  sm:p-5'>
         {/* <Navbar/> */}
       
-      {filterProducts.map((product)=>(
-         <Link href={`/products/${product.id}`}>
+      {filterProducts.map((product,index)=>(
+         <Link key={index} href={`/products/${product.id}`}>
          <div className=" w-full h-fit    sm:mx-auto  bg-[#F9FAFB]  object-cover border  rounded-xl shadow-lg p-4 max-w-xs " 
           key ={product.id}>
         <Image
