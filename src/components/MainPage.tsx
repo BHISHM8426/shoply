@@ -1,6 +1,7 @@
 
   'use client'
-  import React from 'react'
+  import React from 'react';
+  import { useState } from 'react';
   import Image from 'next/image'
   import Navbar from './Navbar'
   import Link from 'next/link'
@@ -11,8 +12,19 @@
   import sneakersimg from  "../../public/sneakers.jpg";
   import handbags from  "../../public/handbags.jpg";
   import watches from  "../../public/watches.jpg";
+  import SearchProduct from './SearchProduct';
+  import { useRouter } from "next/navigation";
 
   export default function MainPage() {
+
+ const [issearch , setIssearch] = useState(false);
+ const [searchitem ,setSearchitem] =useState("")
+ const router = useRouter()
+
+ const handleClick = ()=>{
+  router.push(`/products/${searchitem}`)
+ }
+
     return (
       <>
     <div className=' mx-auto my-0  h-full max-w-[95%] rounded-b-3xl py-5 bg-gray-50 bg-mainpage bg-cover bg-center '>
@@ -26,14 +38,14 @@
       <div className="w-10 h-10 bg-black rounded-full text-white flex text-xs justify-center items-center -ml-1">All</div>
     </div> */}
             <Link href="/products?category=mens">
-            <button className='bg-white text-black w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Mens</button>
+            <button className='bg-white text-black w-24  rounded-3xl duration-300 hover:bg-black hover:text-white py-1'>Mens</button>
             </Link>
             <Link href="/products?category=womens">
-            <button className='bg-white text-black w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Woman</button>
+            <button className='bg-white text-black w-24  rounded-3xl duration-300 hover:bg-black hover:text-white py-1'>Woman</button>
             </Link>
             <Link href="/products?category=Smart-Devices">
             
-        <button className='bg-white text-black w-24  rounded-3xl hover:bg-black hover:text-white py-1'>Devices</button>
+        <button className='bg-white text-black w-24  rounded-3xl duration-300 hover:bg-black hover:text-white py-1'>Devices</button>
             </Link>
         
         
@@ -90,7 +102,17 @@
     </div>
 
     <div className='w-4/5  md:w-full lg:w-2/3 mx-auto flex flex-col gap-8 py-5  lg:py-16    h-full  rounded-3xl  '>
-      <div className='flex justify-between mx-auto   bg-gray-200 w-full sm:w-3/4 rounded-l-full p-3 rounded-r-full'><IoSearch className='text-2xl' /><input className='border-none  w-full h-2/3 focus:outline-none focus:border-none pl-2 text-lg  bg-gray-200' type="text" placeholder='  Search' /> <MdKeyboardVoice className='text-2xl float-end' /></div>
+      
+      <div className='flex justify-between mx-auto relative   bg-gray-200 w-full sm:w-3/4 rounded-l-full p-3 rounded-r-full'><IoSearch className='text-2xl' onClick={handleClick} />
+      
+      <input className='border-none  w-full h-2/3 focus:outline-none focus:border-none pl-2 text-lg  bg-gray-200'
+       type="text" placeholder='  Search' onChange={(e)=>setSearchitem(e.target.value)} onClick={()=>setIssearch(true)} /> 
+       <MdKeyboardVoice className='text-2xl float-end' />
+       {issearch && (
+        <SearchProduct  searchitem={searchitem}/>
+       )}
+       </div>
+      
     
       <div className='hidden sm:block'>
         <ul className='flex flex-wrap gap-5  justify-center  text-black cursor-pointer '>

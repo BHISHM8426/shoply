@@ -31,7 +31,7 @@ Please drop us a note at: aladinn@server.in</p>
 <div className="flex gap-5 ">
   <div className="max-w-[250px]">
     <Image
-      className="w-full h-full rounded-xl object-cover hover:opacity-50 hover:scale-110 duration-150"
+      className="w-full h-full rounded-xl object-cover  hover:scale-110 duration-150"
       src={"https://www.techinasia.com/assets/app_playstore.svg"}
       alt="Picture of the AAP store"
       width={100}
@@ -44,7 +44,7 @@ Please drop us a note at: aladinn@server.in</p>
   
   <div className="max-w-[250px]">
     <Image
-      className="w-full h-auto rounded-xl object-cover hover:opacity-50 hover:scale-110 duration-150"
+      className="w-full h-auto rounded-xl object-cover  hover:scale-110 duration-150"
       src={"https://www.techinasia.com/assets/app_appstore.svg"}
       alt="Picture of the Google store"
       width={100}
@@ -76,12 +76,12 @@ Please drop us a note at: aladinn@server.in</p>
       </div>
       <h1 className='text-black flex flex-wrap text-2xl md:text-4xl font-semibold '>Folow Us-</h1>
       <ul className='flex  gap-2   sm:gap-3 text-black text-2xl'>
-         <li className=' hover:text-blue-800 delay-150 duration-150 transition-all hover:scale-150 bg-black text-white p-2 rounded-full '><FaFacebookF /></li>
-         <li className='hover:text-red-700 transition-all hover:scale-150 bg-black text-white p-2 rounded-full ' ><FaInstagram /></li>
-         <li className='hover:text-red-500 transition-all hover:scale-150 bg-black text-white p-2 rounded-full'><FaYoutube /></li>
-         <li className='hover:text-gray-400 transition-all hover:scale-150 bg-black text-white p-2 rounded-full'><FaTwitter /></li>
-         <li className='hover:text-green-400 transition-all hover:scale-150 bg-black text-white p-2 rounded-full'><FaWhatsapp /></li>
-         <li className='hover:text-blue-300 transition-all hover:scale-150 bg-black text-white p-2 rounded-full'><FaTelegramPlane /></li>
+         <li className=' hover:text-blue-800 delay-150 duration-150 transition-all hover:scale-125 bg-black text-white p-2 rounded-full '><FaFacebookF /></li>
+         <li className='hover:text-red-700 duration-150 transition-all hover:scale-125 bg-black text-white p-2 rounded-full ' ><FaInstagram /></li>
+         <li className='hover:text-red-500 duration-150 transition-all hover:scale-125 bg-black text-white p-2 rounded-full'><FaYoutube /></li>
+         <li className='hover:text-gray-400 duration-150 transition-all hover:scale-125 bg-black text-white p-2 rounded-full'><FaTwitter /></li>
+         <li className='hover:text-green-400 duration-150 transition-all hover:scale-125 bg-black text-white p-2 rounded-full'><FaWhatsapp /></li>
+         <li className='hover:text-blue-300 duration-150 transition-all hover:scale-125 bg-black text-white p-2 rounded-full'><FaTelegramPlane /></li>
       </ul>
         
       

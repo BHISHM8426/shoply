@@ -59,12 +59,12 @@ const Categoriescard = () => {
         <div className='w-full    text-center'><h1 className='text-2xl sm:text-3xl font-semibold  '>Explore Popular Categories </h1></div>
        
 
-    <div className="grid grid-cols-1 gap-3 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="grid grid-cols-1 gap-3 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
       {items.map((item ,index) => (
         <Link key={index} href={`/products?category=${item?.category}`}>
        <div
        key={item.id}
-       className="flex justify-between bg-gray-300 overflow-hidden relative  rounded-3xl text-xs"
+       className="flex justify-between  bg-gray-300 overflow-hidden   rounded-3xl text-xs"
      >   <div className='w-1/2 pl-4 space-y-3 my-auto'>
       <span className=" text-lg  font-semibold">{item.title}</span>
          <p className="text-sm text-gray-700">{item.des}</p>
@@ -73,9 +73,9 @@ const Categoriescard = () => {
           {/* <span className="line-through px-4 text-gray-500">{item.rate}</span> */}
         
      </div>
-         <div className='h-full transform ease-in-out transition-all '>
+         <div className='h-full   '>
          <Image
-  className="w-56 lg:w-48 h-60   rounded-3xl object-cover hover:opacity-50 hover:scale-105 "
+  className="w-56 lg:w-48 h-60   rounded-3xl object-cover duration-150 hover:opacity-50 hover:scale-105 "
   src={item.imageSrc}
   alt={item.alt}
   width={500}

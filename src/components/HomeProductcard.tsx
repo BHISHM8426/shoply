@@ -56,7 +56,7 @@ const Homeproductcard = () => {
               <Link key={index} href={`/products?category=${item?.category}`}>
              <div
              key={item.id}
-             className="flex justify-between  bg-gray-300  overflow-hidden relative      rounded-3xl text-xs"
+             className="flex justify-between  bg-gray-300  overflow-hidden       rounded-3xl text-xs"
            >   <div className='w-1/2 px-4 space-y-3 my-auto '>
             <span className=" text-lg  font-semibold">{item.title}</span>
                <p className="text-sm text-gray-700">{item.des}</p>

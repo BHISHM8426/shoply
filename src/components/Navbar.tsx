@@ -11,6 +11,7 @@
     const pathname = usePathname(); 
     const [menuopen, setMenuopen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+   
 
     useEffect(() => {
       const handleScroll = () => {
@@ -64,12 +65,12 @@
       
 
           {/* Navbar for larger screens */}
-            <div className=" z-10 hidden lg:visible   col-span-9 md:col-span-9 md:flex flex-col flex-wrap gap-3 justify-center md:justify-end items-center sm:flex-row">
+            <div className=" z-30 hidden lg:visible   col-span-9 md:col-span-9 md:flex flex-col flex-wrap gap-3 justify-center md:justify-end items-center sm:flex-row">
           {navItems.map((item) => (
             <button
               key={item.path}
               className={`p-2 px-4 rounded-3xl  font-serif text-sm lg:text-base ${
-              pathname === item.path ? 'bg-black text-white' : 'bg-white text-black hover:bg-black hover:text-white '
+              pathname === item.path ? 'bg-black text-white' : 'bg-white text-black duration-300 hover:bg-black hover:text-white '
               }`}
             >
               <Link href={item.path} className="w-full h-full block text-center">
@@ -93,7 +94,7 @@
      w-[95%] py-1 rounded-b-3xl overflow-hidden flex justify-evenly bg-white shadow-md md:hidden fixed mt-7 lg:hidden`}
   >
     
-            <ul className="flex z-10 items-start gap-3 my-2">
+            <ul className="flex z-30 items-start gap-3 my-2">
               {navItems.map((item) => (
                 <li
                 onClick={()=>setMenuopen(false)}

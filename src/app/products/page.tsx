@@ -6,10 +6,12 @@ import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Productdata from '@/components/ProductsData';
 import Image from 'next/image';
+import ProductsData from '@/components/ProductsData';
 
 function ProductList() {
   const searchParams = useSearchParams();
   const category = searchParams.get('category');
+  // const searchitem = searchParams.get('searchitem')
   const [filterProducts, setFilterProducts] = useState(Productdata);
 
   const renderStars = (rating: number) => {
@@ -40,6 +42,18 @@ function ProductList() {
     }
   }, [category]);
 
+
+  // if(searchitem){
+  //   const searchitems = ProductsData.filter((product)=>
+  //     product.title.toLowerCase().includes(searchitem.toLowerCase())
+  //   )
+  //   setFilterProducts(searchitems)
+  // }
+  // else{
+  //   setFilterProducts(Productdata);
+  // }
+
+  
   return (
     <div className='w-[95%] bg-gray-100 mx-auto rounded-b-3xl mb-5 py-5 space-y-5'>
       <h1 className='text-center text-2xl sm:text-4xl font-semibold'>Shop the Latest & Best Products</h1>
@@ -56,7 +70,7 @@ function ProductList() {
                 priority={true}
                 className="w-32 h-24 sm:w-44 sm:h-44 object-contain rounded-md mx-auto"
               />
-              <h2 className="text-lg truncate font-semibold">{product.title}</h2>
+              <h2 className="text-lg truncate font-semibold mt-4">{product.title}</h2>
               <p className="text-gray-600 truncate text-sm">{product.description}</p>
               <div className="flex items-center">
                 <span className="text-red-500 sm:text-lg">{product.category}</span>
