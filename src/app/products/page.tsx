@@ -45,6 +45,7 @@ export default function page({cettegory}:any) {
       setFilterProducts(Productdata);
     }
   }, [category]);
+  
 
   return (
   

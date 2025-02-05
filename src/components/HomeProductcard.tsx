@@ -52,8 +52,8 @@ const Homeproductcard = () => {
 
       
           <div className="grid grid-cols-1 gap-3 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
-            {newArrivals.map((item) => (
-              <Link href={`/products?category=${item?.category}`}>
+            {newArrivals.map((item,index) => (
+              <Link key={index} href={`/products?category=${item?.category}`}>
              <div
              key={item.id}
              className="flex justify-between  bg-gray-300  overflow-hidden relative      rounded-3xl text-xs"
