@@ -5,7 +5,7 @@
   import Link from 'next/link';
   import { usePathname } from 'next/navigation';
   import { FaRegUser } from "react-icons/fa";
-  import User from './User'
+  import User from './UserLogin'
 
   export default function Navbar() {
     const pathname = usePathname(); 
@@ -80,7 +80,7 @@
             </button>
             
           ))}
-          <Link href="/user" >
+          <Link href="/formik" >
               <FaRegUser className='text-2xl ' />
               </Link>
         </div>
@@ -108,7 +108,7 @@
                   </Link>
                 </li>
               ))}
-              <Link href="/user" >
+              <Link href="/formik" >
               <FaRegUser className='text-2xl text-blue-500' />
               </Link>
               
